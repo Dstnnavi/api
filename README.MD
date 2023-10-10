@@ -7,13 +7,10 @@ JSON POST
 
  
 
-
 ## API
 Description
 
 This JSON POST API endpoint lets clients transmit structured data to a server to create or update records. The request body transmits JSON data, making it adaptable and easy to work with. The server returns an HTTP status code and necessary JSON after processing. It can be used for user registration, data updates, and bespoke workflows with secure authentication. Reference proper documentation for endpoint requirements and error-handling procedures.
-
-
 
 
 ## API
@@ -39,7 +36,6 @@ http://127.0.0.1/api/public/postDelete
 - functions: It will delete data from the database
 - parameters: id
  
-
 
 ## Request
 Payload
@@ -161,7 +157,6 @@ Click the "Send" button to send the request.
 
  
 
-
 ## License
 
 No License 
@@ -185,4 +180,5 @@ information for inquiries or support.
 Dustin Ivan Z. Agtarap 
 - dustinivan.agtarap@student.dmmmsu.edu.ph
 - 09480777611
+- 09289134984
 
