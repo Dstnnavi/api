@@ -121,7 +121,7 @@ Input the URL: http://127.0.0.1/api/public/postName.
 Within the request body, specify the parameters fname and lname along with the desired values for insertion.
 Click "Send" to dispatch the request.
 
-3.Send a POST Request to Update Data:
+3. Send a POST Request to Update Data:
 To update existing database entries using the /api/public/postUpdate endpoint:
 
 Select the HTTP method as POST.
@@ -129,7 +129,7 @@ Enter the URL: http://127.0.0.1/api/public/postUpdate.
 In the request body, include the parameters id, fname, and lname, along with the updated values.
 Click "Send" to submit the request.
 
-4.Send a POST Request to Print Data:
+4. Send a POST Request to Print Data:
 To showcase database data using the /api/public/postPrint endpoint:
 
 Opt for the HTTP method as POST.
