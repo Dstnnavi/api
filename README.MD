@@ -168,6 +168,7 @@ Include contact
 information for inquiries or support.
 
 Dustin Ivan Z. Agtarap 
+- agtarap.ivan03@gmail.com
 - dustinivan.agtarap@student.dmmmsu.edu.ph
 - 09480777611
 
