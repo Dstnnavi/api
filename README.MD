@@ -1,8 +1,6 @@
 "# api"
 
-# API Name
-
-JSON POST with Database Integration
+# JSON POST with Database Integration
 
 This JSON POST API endpoint lets clients transmit structured data to a server to create or update records. The request body transmits JSON data, making it adaptable and easy to work with. The server returns an HTTP status code and necessary JSON after processing. It can be used for user registration, data updates, and bespoke workflows with secure authentication. Reference proper documentation for endpoint requirements and error-handling procedures.
 
@@ -67,8 +65,7 @@ Error Handling:
 
 API is designed to empower developers, businesses, and entrepreneurs by providing a robust foundation for their applications. Whether you are building a social networking platform, e-commerce website, or productivity app, our API is the key to unlocking limitless possibilities. Experience enhanced functionality, improved user engagement, and unparalleled efficiency with our API today.
 
-## API
-Endpoints
+## API Endpoints
 
 Explain the accessible endpoints, their roles, and the necessary inputs.
 
@@ -94,8 +91,7 @@ Required Parameters: ID.
 
 
 
-## Request
-Payload
+## Request Payload
 
 JSON Payload postName:
 
@@ -105,9 +101,13 @@ Request payload:
    "fname":"manny"
 }
 
+This payload is used for creating a new name entry. It requires both the last name ("lname") and first name ("fname") of the person being added.
+
  JSON Payload printName:
  
 Request payload:
+
+This payload does not contain any specific fields. It might be used for retrieving or printing a name from the system, but the payload itself does not specify any required or optional fields.
 
 JSON Payload updateName:
 
@@ -118,6 +118,8 @@ Request payload:
    "fname":"john"
 }
 
+This payload is used for updating an existing name entry identified by the specified "id". It requires the updated last name ("lname") and first name ("fname") of the person.
+
 JSON Payload deleteName:
 
 Request payload:
@@ -125,7 +127,10 @@ Request payload:
   "id":1
 }
 
+This payload is used for deleting a name entry based on the specified "id". It only requires the unique identifier of the name entry to be deleted.
+
 ## Response
+
 JSON Payload postName:
 
 - Response payload:
@@ -133,12 +138,18 @@ JSON Payload postName:
          "status":"success","data":null
 }
 
+"status": Indicates the status of the API request. In this case, it's "success" indicating that the request was successful.
+"data": This field is present but set to null, indicating that no specific data is returned for successful postName requests.
+
 JSON Payload printName:
 
 - Response payload:
 - {
          "status":"success","data":["lname":"hortizuela","fname":"manny","lname":"licayan","fname":"arnold"]
 }
+
+"status": Indicates the status of the API request. It's "success" indicating that the request was successful.
+"data": An array containing objects, each representing a name entry. Each object contains "lname" (last name) and "fname" (first name) fields with corresponding values. The response includes multiple name entries.
 
 
 JSON Payload updateName:
@@ -148,6 +159,9 @@ JSON Payload updateName:
          "status":"success","data":null
 }
 
+"status": Indicates the status of the API request. It's "success" indicating that the request was successful.
+"data": This field is present but set to null, indicating that no specific data is returned for successful updateName requests.
+
 
 JSON Payload deleteName:
 
@@ -156,6 +170,8 @@ JSON Payload deleteName:
          "status":"success","data":null
 }
 
+"status": Indicates the status of the API request. It's "success" indicating that the request was successful.
+"data": This field is present but set to null, indicating that no specific data is returned for successful deleteName requests.
 
 
 
