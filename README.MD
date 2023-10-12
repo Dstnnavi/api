@@ -103,7 +103,7 @@ Required Parameters: ID.
 
 This payload is used for creating a new name entry. It requires both the last name ("lname") and first name ("fname") of the person being added.
 
-## JSON Payload postName:
+## JSON Payload postPrint:
  
 - Request payload:
 
