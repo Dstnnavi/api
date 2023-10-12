@@ -103,13 +103,13 @@ Required Parameters: ID.
 
 This payload is used for creating a new name entry. It requires both the last name ("lname") and first name ("fname") of the person being added.
 
-## JSON Payload printName:
+## JSON Payload postName:
  
 - Request payload:
 
 This payload does not contain any specific fields. It might be used for retrieving or printing a name from the system, but the payload itself does not specify any required or optional fields.
 
-## JSON Payload updateName:
+## JSON Payload postUpdate:
 
 - Request payload:
 {
@@ -120,7 +120,7 @@ This payload does not contain any specific fields. It might be used for retrievi
 
 This payload is used for updating an existing name entry identified by the specified "id". It requires the updated last name ("lname") and first name ("fname") of the person.
 
-## JSON Payload deleteName:
+## JSON Payload postDelete:
 
 - Request payload:
 {
@@ -141,7 +141,7 @@ This payload is used for deleting a name entry based on the specified "id". It o
 "status": Indicates the status of the API request. In this case, it's "success" indicating that the request was successful.
 "data": This field is present but set to null, indicating that no specific data is returned for successful postName requests.
 
-## JSON Payload printName:
+## JSON Payload postPrint:
 
 - Response payload:
 {
@@ -152,7 +152,7 @@ This payload is used for deleting a name entry based on the specified "id". It o
 "data": An array containing objects, each representing a name entry. Each object contains "lname" (last name) and "fname" (first name) fields with corresponding values. The response includes multiple name entries.
 
 
-## JSON Payload updateName:
+## JSON Payload postUpdate:
 
 - Response payload:
 {
@@ -163,7 +163,7 @@ This payload is used for deleting a name entry based on the specified "id". It o
 "data": This field is present but set to null, indicating that no specific data is returned for successful updateName requests.
 
 
-## JSON Payload deleteName:
+## JSON Payload postDelete:
 
 - Response payload:
 {
